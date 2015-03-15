@@ -21,6 +21,10 @@
 
         <link rel="shortcut icon" href="favicon.ico?v=1">
 
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="css/bootstrap-image-gallery.css">
+<link rel="stylesheet" href="css/demo.css">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main-1.6.css">
 
@@ -40,6 +44,7 @@
                             <li><a href="#brideandgroom">THE BRIDE &amp; GROOM</a></li>
                             <li><a href="#wedding">WEDDING</a></li>
                             <li><a href="#transportation">TRANSPORTATION</a></li>
+                            <li><a href="#gallery">GALLERY</a></li>
                         </ul>
 
                     </nav>
@@ -74,12 +79,11 @@
                             <h2>魚&nbsp;Tzuyu Shen</h2>
                             <p>
                                 <img src="img/sarahThumb.jpg" class="thumb" alt="Sarah" />
-                                1986.04.02，恭喜皆得爸爸與玉鈴媽媽喜穫麟兒。在純樸的小鎮東山，小丫頭沈姿妤就此誕生在溫暖的漁港，和弟弟祐盛、建志一起在充滿愛的環境下長大
-                                。從小最愛守在媽媽的縫紉機前寫功課分享學校有趣的事，最常在爸的修車場把玩泥巴，開心的陪伴弟弟一起成長。<br /><br />
-                                3歲開始就吵著爸媽想要搭娃娃車上學，開始了人生學習之路，在學校時最愛的就是模仿老師上課，而從小在家照顧弟弟所培養出來的成就感，讓自己確立對
-                                幼兒教育的領域發展。<br /><br />
-                                一路就讀東山國小→東山國中→嘉義家職→國北護嬰幼保系＋教育學程。南海實習→代理代課老師→通過教師甄選成為正式教師+台東大學暑碩班持續進修，感謝
-                                一路良師益友相伴，及好長官 .好家長 .好學生 .好同事充實我美好的生活 。
+                                1986.04.02，恭喜皆得爸爸與玉鈴媽媽喜穫麟兒。在純樸的小鎮東山，小丫頭姿妤就此誕生在溫暖的漁港，和弟弟祐盛、建志一起在充滿愛的環境下長大
+                                。從小最愛守在媽媽縫紉機前寫功課分享學校有趣的事，最常在爸的修車場把玩泥巴，菜園裡找樂子，開心的陪伴弟弟一起成長。<br /><br />
+                                3歲時就吵著要搭娃娃車上學，開始了學習之路，求學時最愛玩的遊戲就是模仿老師上課，也因從小協助照顧弟弟的經驗培養出對幼兒教育的興趣。<br /><br />
+                                一路就讀東山國小→東山國中→嘉義家職→國北護嬰幼保系＋教育學程。南海實習→代理代課老師→通過教師甄選成為正式教師+台東大學暑碩班持續進修...<br /><br />
+                                感謝一路上良師益友的相伴，及好長官、好家長 、好學生、好同事、學會員充實我美好的生活 。
                             </p>
 
                         </div><!--end column-->
@@ -251,6 +255,17 @@
                         </div>
                     </section>
 
+                    <section id="gallery" class="clearfix">
+
+                        <h1>Gallery</h1>
+
+                        <div class="column full">
+
+                            <div id="links"></div>
+
+                        </div><!--end column-->
+                    </section>
+
                     <div style="height: 100px"></div>
 
                 </div> <!-- #main -->
@@ -258,6 +273,41 @@
         </div> <!-- #bg-container -->
 
         <script src="js/main-1.6.js"></script>
+        
+				<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+				<div id="blueimp-gallery" class="blueimp-gallery">
+				    <!-- The container for the modal slides -->
+				    <div class="slides"></div>
+				    <!-- Controls for the borderless lightbox -->
+				    <h3 class="title"></h3>
+				    <a class="prev">‹</a>
+				    <a class="next">›</a>
+				    <a class="close">×</a>
+				    <a class="play-pause"></a>
+				    <ol class="indicator"></ol>
+				    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+				    <div class="modal fade">
+				        <div class="modal-dialog">
+				            <div class="modal-content">
+				                <div class="modal-header">
+				                    <button type="button" class="close" aria-hidden="true">&times;</button>
+				                    <h4 class="modal-title"></h4>
+				                </div>
+				                <div class="modal-body next"></div>
+				                <div class="modal-footer">
+				                    <button type="button" class="btn btn-default pull-left prev">
+				                        <i class="glyphicon glyphicon-chevron-left"></i>
+				                        Previous
+				                    </button>
+				                    <button type="button" class="btn btn-primary next">
+				                        Next
+				                        <i class="glyphicon glyphicon-chevron-right"></i>
+				                    </button>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
 
         <script>
           var _gaq = _gaq || [];
@@ -270,5 +320,8 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
         </script>
+				<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+				<script src="js/bootstrap-image-gallery.js"></script>
+				<script src="js/demo.js"></script>
     </body>
 </html>
